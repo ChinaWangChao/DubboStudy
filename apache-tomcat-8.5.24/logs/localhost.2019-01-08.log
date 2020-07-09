@@ -1,0 +1,60 @@
+08-Jan-2019 20:28:37.037 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+08-Jan-2019 20:28:37.118 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing log4j system
+08-Jan-2019 20:28:37.285 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+08-Jan-2019 20:28:48.520 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring sub WebApplicationContext: sysmanage
+08-Jan-2019 20:28:50.002 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring sub WebApplicationContext: sysinfo
+08-Jan-2019 20:28:50.828 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring sub WebApplicationContext: personal
+08-Jan-2019 20:28:51.701 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring sub WebApplicationContext: governance
+08-Jan-2019 20:28:52.522 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring sub WebApplicationContext: home
+08-Jan-2019 20:28:53.255 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log WebxComponents: initialization completed
+08-Jan-2019 20:28:53.264 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing filter: webx
+08-Jan-2019 20:28:53.273 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log WebxFrameworkFilter - webx: initialization completed
+08-Jan-2019 20:28:53.274 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing filter: mdc
+08-Jan-2019 20:28:53.277 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SetLoggingContextFilter - mdc: initialization completed
+08-Jan-2019 20:28:53.627 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+08-Jan-2019 20:28:53.627 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+08-Jan-2019 20:28:57.315 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+08-Jan-2019 20:28:57.707 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+08-Jan-2019 20:28:58.882 严重 [localhost-startStop-1] org.apache.catalina.core.StandardContext.listenerStart Exception sending context initialized event to listener instance of class [org.springframework.web.context.ContextLoaderListener]
+ org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Autowiring of fields failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.itheima.dao.UserDao com.itheima.service.UserServiceImpl.userDao; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No unique bean of type [com.itheima.dao.UserDao] is defined: Unsatisfied dependency of type [interface com.itheima.dao.UserDao]: expected at least 1 matching bean
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessAfterInstantiation(AutowiredAnnotationBeanPostProcessor.java:243)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:959)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:472)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:409)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:380)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:264)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:261)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:185)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:164)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:429)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:728)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:380)
+	at org.springframework.web.context.ContextLoader.createWebApplicationContext(ContextLoader.java:255)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:199)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:45)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4745)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5207)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1141)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1875)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.itheima.dao.UserDao com.itheima.service.UserServiceImpl.userDao; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No unique bean of type [com.itheima.dao.UserDao] is defined: Unsatisfied dependency of type [interface com.itheima.dao.UserDao]: expected at least 1 matching bean
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:435)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.injectFields(InjectionMetadata.java:105)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessAfterInstantiation(AutowiredAnnotationBeanPostProcessor.java:240)
+	... 29 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No unique bean of type [com.itheima.dao.UserDao] is defined: Unsatisfied dependency of type [interface com.itheima.dao.UserDao]: expected at least 1 matching bean
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:613)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:412)
+	... 31 more
+
+08-Jan-2019 20:28:58.890 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext

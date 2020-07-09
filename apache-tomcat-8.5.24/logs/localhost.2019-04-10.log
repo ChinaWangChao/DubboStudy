@@ -1,0 +1,13 @@
+10-Apr-2019 11:48:16.790 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+10-Apr-2019 11:48:16.847 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing log4j system
+10-Apr-2019 11:48:16.969 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+10-Apr-2019 11:48:35.331 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring sub WebApplicationContext: sysmanage
+10-Apr-2019 11:48:36.428 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring sub WebApplicationContext: sysinfo
+10-Apr-2019 11:48:37.173 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring sub WebApplicationContext: personal
+10-Apr-2019 11:48:37.976 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring sub WebApplicationContext: governance
+10-Apr-2019 11:48:38.656 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring sub WebApplicationContext: home
+10-Apr-2019 11:48:39.308 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log WebxComponents: initialization completed
+10-Apr-2019 11:48:39.314 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing filter: webx
+10-Apr-2019 11:48:39.321 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log WebxFrameworkFilter - webx: initialization completed
+10-Apr-2019 11:48:39.322 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing filter: mdc
+10-Apr-2019 11:48:39.323 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SetLoggingContextFilter - mdc: initialization completed

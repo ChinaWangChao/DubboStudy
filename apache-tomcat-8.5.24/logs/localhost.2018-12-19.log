@@ -1,0 +1,242 @@
+19-Dec-2018 11:45:25.256 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+19-Dec-2018 11:45:25.373 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+19-Dec-2018 11:45:32.669 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+19-Dec-2018 11:45:32.669 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+19-Dec-2018 14:28:29.266 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+19-Dec-2018 14:28:29.396 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+19-Dec-2018 14:28:37.527 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+19-Dec-2018 14:28:37.527 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+19-Dec-2018 14:29:43.788 信息 [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log Initializing log4j system
+19-Dec-2018 14:29:43.954 信息 [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+19-Dec-2018 14:29:53.379 严重 [localhost-startStop-2] org.apache.catalina.core.StandardContext.listenerStart Exception sending context initialized event to listener instance of class [com.alibaba.citrus.webx.context.WebxContextLoaderListener]
+ org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'uriBrokerService': Cannot create inner bean '(inner bean)' of type [com.alibaba.citrus.service.uribroker.impl.URIBrokerServiceImpl$URIBrokerInfo] while setting bean property 'brokers' with key [0]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#25': Cannot create inner bean 'server' of type [com.alibaba.citrus.service.uribroker.uri.GenericURIBroker] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'server': Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'URIType' of bean class [com.alibaba.citrus.service.uribroker.uri.GenericURIBroker]: Bean property 'URIType' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:230)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:122)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedList(BeanDefinitionValueResolver.java:287)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:126)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1245)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1010)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:472)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:409)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:380)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:264)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:261)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:185)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:164)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:429)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:728)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:380)
+	at org.springframework.web.context.ContextLoader.createWebApplicationContext(ContextLoader.java:255)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:199)
+	at com.alibaba.citrus.webx.context.WebxComponentsLoader.initWebApplicationContext(WebxComponentsLoader.java:117)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:45)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4745)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5207)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:986)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1857)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#25': Cannot create inner bean 'server' of type [com.alibaba.citrus.service.uribroker.uri.GenericURIBroker] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'server': Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'URIType' of bean class [com.alibaba.citrus.service.uribroker.uri.GenericURIBroker]: Bean property 'URIType' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:230)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:117)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:479)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:162)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:925)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:835)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:440)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:409)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:380)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:219)
+	... 34 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'server': Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'URIType' of bean class [com.alibaba.citrus.service.uribroker.uri.GenericURIBroker]: Bean property 'URIType' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1279)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1010)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:472)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:409)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:380)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:219)
+	... 44 more
+Caused by: org.springframework.beans.NotWritablePropertyException: Invalid property 'URIType' of bean class [com.alibaba.citrus.service.uribroker.uri.GenericURIBroker]: Bean property 'URIType' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:801)
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:651)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:78)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:59)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1276)
+	... 50 more
+
+19-Dec-2018 14:29:53.390 信息 [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+19-Dec-2018 14:29:53.390 信息 [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log Shutting down log system
+19-Dec-2018 14:31:10.681 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing log4j system
+19-Dec-2018 14:31:10.872 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+19-Dec-2018 14:31:20.215 严重 [localhost-startStop-1] org.apache.catalina.core.StandardContext.listenerStart Exception sending context initialized event to listener instance of class [com.alibaba.citrus.webx.context.WebxContextLoaderListener]
+ org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'uriBrokerService': Cannot create inner bean '(inner bean)' of type [com.alibaba.citrus.service.uribroker.impl.URIBrokerServiceImpl$URIBrokerInfo] while setting bean property 'brokers' with key [0]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#25': Cannot create inner bean 'server' of type [com.alibaba.citrus.service.uribroker.uri.GenericURIBroker] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'server': Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'URIType' of bean class [com.alibaba.citrus.service.uribroker.uri.GenericURIBroker]: Bean property 'URIType' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:230)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:122)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedList(BeanDefinitionValueResolver.java:287)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:126)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1245)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1010)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:472)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:409)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:380)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:264)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:261)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:185)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:164)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:429)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:728)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:380)
+	at org.springframework.web.context.ContextLoader.createWebApplicationContext(ContextLoader.java:255)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:199)
+	at com.alibaba.citrus.webx.context.WebxComponentsLoader.initWebApplicationContext(WebxComponentsLoader.java:117)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:45)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4745)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5207)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:986)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1857)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#25': Cannot create inner bean 'server' of type [com.alibaba.citrus.service.uribroker.uri.GenericURIBroker] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'server': Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'URIType' of bean class [com.alibaba.citrus.service.uribroker.uri.GenericURIBroker]: Bean property 'URIType' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:230)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:117)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:479)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:162)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:925)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:835)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:440)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:409)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:380)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:219)
+	... 34 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'server': Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'URIType' of bean class [com.alibaba.citrus.service.uribroker.uri.GenericURIBroker]: Bean property 'URIType' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1279)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1010)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:472)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:409)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:380)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:219)
+	... 44 more
+Caused by: org.springframework.beans.NotWritablePropertyException: Invalid property 'URIType' of bean class [com.alibaba.citrus.service.uribroker.uri.GenericURIBroker]: Bean property 'URIType' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:801)
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:651)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:78)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:59)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1276)
+	... 50 more
+
+19-Dec-2018 14:31:20.222 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+19-Dec-2018 14:31:20.222 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Shutting down log system
+19-Dec-2018 14:31:21.467 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+19-Dec-2018 14:31:21.467 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+19-Dec-2018 17:54:28.421 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing log4j system
+19-Dec-2018 17:54:28.618 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+19-Dec-2018 17:54:38.250 严重 [localhost-startStop-1] org.apache.catalina.core.StandardContext.listenerStart Exception sending context initialized event to listener instance of class [com.alibaba.citrus.webx.context.WebxContextLoaderListener]
+ org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'uriBrokerService': Cannot create inner bean '(inner bean)' of type [com.alibaba.citrus.service.uribroker.impl.URIBrokerServiceImpl$URIBrokerInfo] while setting bean property 'brokers' with key [0]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#25': Cannot create inner bean 'server' of type [com.alibaba.citrus.service.uribroker.uri.GenericURIBroker] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'server': Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'URIType' of bean class [com.alibaba.citrus.service.uribroker.uri.GenericURIBroker]: Bean property 'URIType' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:230)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:122)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedList(BeanDefinitionValueResolver.java:287)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:126)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1245)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1010)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:472)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:409)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:380)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:264)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:261)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:185)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:164)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:429)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:728)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:380)
+	at org.springframework.web.context.ContextLoader.createWebApplicationContext(ContextLoader.java:255)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:199)
+	at com.alibaba.citrus.webx.context.WebxComponentsLoader.initWebApplicationContext(WebxComponentsLoader.java:117)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:45)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4745)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5207)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:986)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1857)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#25': Cannot create inner bean 'server' of type [com.alibaba.citrus.service.uribroker.uri.GenericURIBroker] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'server': Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'URIType' of bean class [com.alibaba.citrus.service.uribroker.uri.GenericURIBroker]: Bean property 'URIType' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:230)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:117)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:479)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:162)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:925)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:835)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:440)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:409)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:380)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:219)
+	... 34 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'server': Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'URIType' of bean class [com.alibaba.citrus.service.uribroker.uri.GenericURIBroker]: Bean property 'URIType' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1279)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1010)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:472)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:409)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:380)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:219)
+	... 44 more
+Caused by: org.springframework.beans.NotWritablePropertyException: Invalid property 'URIType' of bean class [com.alibaba.citrus.service.uribroker.uri.GenericURIBroker]: Bean property 'URIType' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:801)
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:651)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:78)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:59)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1276)
+	... 50 more
+
+19-Dec-2018 17:54:38.258 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+19-Dec-2018 17:54:38.258 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Shutting down log system
+19-Dec-2018 17:54:39.619 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+19-Dec-2018 17:54:39.619 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+19-Dec-2018 18:14:41.147 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+19-Dec-2018 18:14:41.148 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+19-Dec-2018 18:15:37.470 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+19-Dec-2018 18:15:37.532 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing log4j system
+19-Dec-2018 18:15:37.654 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+19-Dec-2018 18:15:47.070 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring sub WebApplicationContext: sysmanage
+19-Dec-2018 18:15:48.292 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring sub WebApplicationContext: sysinfo
+19-Dec-2018 18:15:49.019 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring sub WebApplicationContext: personal
+19-Dec-2018 18:15:49.769 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring sub WebApplicationContext: governance
+19-Dec-2018 18:15:50.436 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring sub WebApplicationContext: home
+19-Dec-2018 18:15:51.096 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log WebxComponents: initialization completed
+19-Dec-2018 18:15:51.101 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing filter: webx
+19-Dec-2018 18:15:51.110 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log WebxFrameworkFilter - webx: initialization completed
+19-Dec-2018 18:15:51.111 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing filter: mdc
+19-Dec-2018 18:15:51.111 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SetLoggingContextFilter - mdc: initialization completed
+19-Dec-2018 18:15:51.382 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+19-Dec-2018 18:15:51.382 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
