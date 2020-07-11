@@ -1,0 +1,9 @@
+0:0:0:0:0:0:0:1 - - [16/Apr/2019:12:11:07 +0800] "GET /dubbo-admin-2.6.0/ HTTP/1.1" 401 1034
+0:0:0:0:0:0:0:1 - - [16/Apr/2019:12:11:09 +0800] "GET /dubbo-admin-2.6.0/ HTTP/1.1" 200 17216
+0:0:0:0:0:0:0:1 - - [16/Apr/2019:12:11:09 +0800] "GET /favicon.ico HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [16/Apr/2019:12:11:11 +0800] "GET /dubbo-admin-2.6.0/governance/applications HTTP/1.1" 200 16096
+0:0:0:0:0:0:0:1 - - [16/Apr/2019:12:11:11 +0800] "GET /images/tip_choose.png HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [16/Apr/2019:12:11:11 +0800] "GET /images/pop_close.png HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [16/Apr/2019:12:11:11 +0800] "GET /images/tip_del.png HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [16/Apr/2019:12:11:11 +0800] "GET /images/tip_succeed.png HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [16/Apr/2019:12:11:11 +0800] "GET /images/tip_confirm.png HTTP/1.1" 404 -

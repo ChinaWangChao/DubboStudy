@@ -1,0 +1,30 @@
+06-May-2019 11:25:49.140 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.24
+06-May-2019 11:25:49.143 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 27 2017 13:05:30 UTC
+06-May-2019 11:25:49.144 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.24.0
+06-May-2019 11:25:49.144 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+06-May-2019 11:25:49.144 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+06-May-2019 11:25:49.144 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-May-2019 11:25:49.145 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_162\jre
+06-May-2019 11:25:49.145 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_162-b12
+06-May-2019 11:25:49.145 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+06-May-2019 11:25:49.145 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\heima344\Apache Dubbo\资源\apache-tomcat-8.5.24
+06-May-2019 11:25:49.145 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\heima344\Apache Dubbo\资源\apache-tomcat-8.5.24
+06-May-2019 11:25:49.145 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\heima344\Apache Dubbo\资源\apache-tomcat-8.5.24\conf\logging.properties
+06-May-2019 11:25:49.150 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-May-2019 11:25:49.150 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-May-2019 11:25:49.150 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-May-2019 11:25:49.151 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+06-May-2019 11:25:49.151 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\heima344\Apache Dubbo\资源\apache-tomcat-8.5.24
+06-May-2019 11:25:49.151 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\heima344\Apache Dubbo\资源\apache-tomcat-8.5.24
+06-May-2019 11:25:49.152 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\heima344\Apache Dubbo\资源\apache-tomcat-8.5.24\temp
+06-May-2019 11:25:49.152 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+06-May-2019 11:25:49.155 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+06-May-2019 11:25:49.157 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+06-May-2019 11:25:49.949 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+06-May-2019 11:25:50.080 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-May-2019 11:25:50.533 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-May-2019 11:25:50.549 信息 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1812 ms
+06-May-2019 11:25:50.572 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-May-2019 11:25:50.573 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.24
+06-May-2019 11:25:50.595 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [D:\heima344\Apache Dubbo\资源\apache-tomcat-8.5.24\webapps\dubbo-admin-2.6.0.war]
+06-May-2019 11:25:56.133 信息 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
